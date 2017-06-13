@@ -1,0 +1,13 @@
+<div class="porfolioItem">
+    <h2>{{title}}</h2>
+    <div>ICON: {{icon}}</div>
+    <ul *ngIf="items">
+        <li *ngFor="let item of items">{{item}}</li>
+    </ul>
+    <span *ngIf="description">{{description}}</span>
+    <ul>
+        <li *ngFor="let url of urls">
+            {{url.title}} -- {{url.url}} -- {{url.icon}}
+        </li>
+    </ul>
+</div>

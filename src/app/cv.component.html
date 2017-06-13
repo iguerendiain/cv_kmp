@@ -1,0 +1,18 @@
+<div id="cv">
+    <screen-title [title]="title"></screen-title>
+
+    <div class="cvCategory">
+        <category-title [title]="workTitle"></category-title>
+        <work-item *ngFor="let work of works" [item]="work"></work-item>
+    </div>
+
+    <div class="cvCategory">
+        <category-title [title]="techTitle"></category-title>
+        <tech-item *ngFor="let tech of techs" [item]="tech"></tech-item>
+    </div>
+
+    <div class="cvCategory">
+        <category-title [title]="langTitle"></category-title>
+        <language-item *ngFor="let language of languages" [item]="language"></language-item>
+    </div>
+</div>
