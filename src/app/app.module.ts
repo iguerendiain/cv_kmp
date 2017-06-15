@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
@@ -16,6 +17,14 @@ import { TechItemComponent } from './techitem.component';
 import { WorkItemComponent } from './workitem.component';
 
 import { DataService } from './data.service';
+
+const routes: Routes = [
+  {path:'portfolio', component:PortfolioComponent },
+  {path:'cv', component:CVComponent },
+  {path:'w', component:ScreenTitleComponent },
+  {path:'**',redirectTo:'/portfolio',pathMatch:'full'},
+  {path:'',redirectTo:'/portfolio',pathMatch:'full'}
+];
 
 @NgModule({
   declarations: [
@@ -34,6 +43,7 @@ import { DataService } from './data.service';
   imports: [
     BrowserModule,
     HttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     DataService

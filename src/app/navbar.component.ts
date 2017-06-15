@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { Component } from '@angular/core';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'nav-bar',
@@ -7,17 +7,35 @@ import { DataService } from './data.service';
   styleUrls: ['./navbar.component.css']
 })
 
-export class NavbarComponent {
+export class NavbarComponent extends DataSubscribedComponent {
   title:string;
   languages:[string];
+  portfolioTitle:string;
+  cvTitle:string;
+  contactTitle:string;
 
-  constructor(private data:DataService){
+  goToContact():void{
+      window.scrollTo(0,document.body.scrollHeight);
   }
 
-  ngOnInit():void{
-    let cvdata = this.data.getData();
-    this.title = cvdata.navbar.title[this.data.getLanguage()];
+  setLanguage(language:string):void{
+    this.setDataLanguage(language);
+  }
+
+  onLanguageChanged(language:string):void{
+    this.updateData(this.getCVData());
+  }
+
+  onCVDataChanged(cvData:any):void{
+    this.updateData(cvData);
+  }
+
+  updateData(cvdata:any):void{
+    let lang = this.getLanguage();
+    this.title = cvdata.navbar.title[lang];
     this.languages = cvdata.languages;
+    this.portfolioTitle = cvdata.navbar.menu.portfolio.title[lang];
+    this.cvTitle = cvdata.navbar.menu.cv.title[lang];
+    this.contactTitle = cvdata.navbar.menu.contact.title[lang];
   }
-
 }

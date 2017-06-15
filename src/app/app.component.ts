@@ -9,8 +9,6 @@ import { DataService } from './data.service';
 })
 
 export class AppComponent {
-  dataLoaded:boolean = false;
-  
   constructor(private data:DataService){}
 
   ngOnInit():void{
@@ -19,8 +17,6 @@ export class AppComponent {
 
   init(cvData):void{
     this.data.setData(cvData);
-    this.data.autoSetLanguage();
-    this.dataLoaded = true;
   }
 
 }

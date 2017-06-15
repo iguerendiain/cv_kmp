@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { Component } from '@angular/core';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'footer-section',
@@ -7,18 +7,22 @@ import { DataService } from './data.service';
   styleUrls: ['./footer.component.css']
 })
 
-export class FooterComponent {
-  avatar:string;
-  linkedin:string;
-  google:string;
-  creditsName:string;
-  creditsLink:string;
+export class FooterComponent extends DataSubscribedComponent{
+  avatar:string = null;
+  linkedin:string = null;
+  google:string = null;
+  creditsName:string = null;
+  creditsLink:string = null;
 
-  constructor(private data:DataService){}
+  onLanguageChanged(language:string):void{
+    this.updateData(this.getCVData());
+  }
 
-  ngOnInit():void{
-    let cvdata = this.data.getData();
+  onCVDataChanged(cvData:any):void{
+    this.updateData(cvData);
+  }
 
+  updateData(cvdata:any):void{
     this.avatar = cvdata.contact.avatar;
     this.linkedin = cvdata.contact.linkedin;
     this.google = cvdata.contact.google;

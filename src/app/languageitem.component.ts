@@ -1,5 +1,5 @@
-import { Component,Input,OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { Component,Input } from '@angular/core';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'language-item',
@@ -7,16 +7,28 @@ import { DataService } from './data.service';
   styleUrls: ['./languageitem.component.css']
 })
 
-export class LanguageItemComponent {
+export class LanguageItemComponent extends DataSubscribedComponent{
   @Input() item:any;
 
   title:string;
   description:string;
 
-  constructor(private data:DataService){}
-
   ngOnInit():void{
-    this.title = this.item.title[this.data.getLanguage()];
-    this.description = this.item.description[this.data.getLanguage()];
+    this.updateData();
   }
+
+  onLanguageChanged(language:string):void{
+    this.updateData();
+  }
+
+  onCVDataChanged(cvData:any):void{
+    this.updateData();
+  }
+
+  updateData():void{
+    this.title = this.item.title[this.getLanguage()];
+    this.description = this.item.description[this.getLanguage()];
+  }
+
+
 }

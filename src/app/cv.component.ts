@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'cv-screen',
@@ -7,26 +7,47 @@ import { DataService } from './data.service';
   styleUrls: ['./cv.component.css']
 })
 
-export class CVComponent {
-  title:string;
-  workTitle:string;
-  techTitle:string;
-  langTitle:string;
-  languages:[any];
-  works:[any];
-  techs:[any];
+export class CVComponent extends DataSubscribedComponent{
+  dataAvailable:boolean = false;
+  title:string = null;
+  workTitle:string = null;
+  workContent:any[] = null;
+  techTitle:string = null;
+  techContent:any[] = null;
+  langTitle:string = null;
+  langContent:any[] = null;
 
-  constructor(private data:DataService){}
-  
   ngOnInit():void{
-    let cvdata = this.data.getData();
-    this.title = cvdata.cv.title[this.data.getLanguage()];
-    this.workTitle = cvdata.cv.work.title[this.data.getLanguage()];
-    this.techTitle = cvdata.cv.tech.title[this.data.getLanguage()];
-    this.langTitle = cvdata.cv.languages.title[this.data.getLanguage()];
-    this.languages = cvdata.cv.languages.content;
-    this.works = cvdata.cv.work.content;
-    this.techs = cvdata.cv.tech.content;
+    this.updateData(this.getCVData());
   }
-  
+
+  onLanguageChanged(language:string):void{
+    this.updateData(this.getCVData());
+  }
+
+  onCVDataChanged(cvData:any):void{
+    this.updateData(cvData);
+  }
+
+  updateData(cvData:any):void{
+    if (cvData!=null){
+      this.dataAvailable = true;
+      this.title = cvData.cv.title[this.getLanguage()];
+      this.workTitle = cvData.cv.work.title[this.getLanguage()];
+      this.workContent = cvData.cv.work.content;
+      this.techTitle = cvData.cv.tech.title[this.getLanguage()];
+      this.techContent = cvData.cv.tech.content;
+      this.langTitle = cvData.cv.languages.title[this.getLanguage()];
+      this.langContent = cvData.cv.languages.content;
+    }else{
+      this.dataAvailable = false;
+      this.title = null;
+      this.workTitle = null;
+      this.workContent = null;
+      this.techTitle = null;
+      this.techContent = null;
+      this.langTitle = null;
+      this.langContent = null;      
+    }
+  }
 }

@@ -1,3 +1,13 @@
 <div id="navBar">
-    {{title}} -- <span *ngFor="let l of languages">[{{l}}]</span>
+    {{title}}
+
+    <ul>
+        <li routerLink="/portfolio">{{portfolioTitle}}</li>
+        <li routerLink="/cv">{{cvTitle}}</li>
+        <li (click)="goToContact()">{{contactTitle}}</li>
+    </ul>
+
+    <ul>
+        <li (click)="setLanguage(l)" *ngFor="let l of languages">{{l}}</li>
+    </ul>
 </div>

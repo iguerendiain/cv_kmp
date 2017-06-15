@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { Component,OnInit,OnChanges } from '@angular/core';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'portfolio-screen',
@@ -7,16 +7,33 @@ import { DataService } from './data.service';
   styleUrls: ['./portfolio.component.css']
 })
 
-export class PortfolioComponent {
-  title:string;
-  projects:[any];
-
-  constructor(private data:DataService){}
+export class PortfolioComponent extends DataSubscribedComponent{
+  dataAvailable:boolean = false;
+  title:string = null;
+  projects:any[] = null;
 
   ngOnInit():void{
-    let cvdata = this.data.getData();
-    this.title = cvdata.portfolio.title[this.data.getLanguage()];
-    this.projects = cvdata.portfolio.projects;
+    this.updateData(this.getCVData());
+  }
+
+  onLanguageChanged(language:string):void{
+    this.updateData(this.getCVData());
+  }
+
+  onCVDataChanged(cvData:any):void{
+    this.updateData(cvData);
+  }
+
+  updateData(cvdata:any):void{
+    if (cvdata!=null){
+      this.dataAvailable = true;
+      this.title = cvdata.portfolio.title[this.getLanguage()];
+      this.projects = cvdata.portfolio.projects;
+    }else{
+        this.dataAvailable = false;
+        this.title = null;
+        this.projects = null;
+    }
   }
   
 }

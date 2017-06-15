@@ -6,6 +6,29 @@
             "es":"Ignacio Guerendiain",
             "en":"Ignacio Guerendiain",
             "kg":"Ignacio Guerendiain"
+        },
+        "menu":{
+            "portfolio":{
+                "title":{
+                    "es":"Trabajos seleccionados",
+                    "en":"Portfolio",
+                    "kg":null
+                }
+            },
+            "cv":{
+                "title":{
+                    "es":"Curriculum Vitae",
+                    "en":"Resume",
+                    "kg":null
+                }
+            },
+            "contact":{
+                "title":{
+                    "es":"Contacto",
+                    "en":"Contact",
+                    "kg":null
+                }
+            }
         }
     },
     "portfolio":{
@@ -424,7 +447,7 @@
                         "en":"In charge of de development of a tool for musicians. Working as a leader, analyst and developer. Leading a multidiciplinary team working on C and C++ on GNU/Linux and Windows for servers and desktop, Java under the JAX-RS standar in its Sun Jersey implementation, PostgreSQL and AngularJS. Had also the responsability of the installation and maintenance of the servers requires for the project using Apache, Tomcat and SVN on GNU/Linux.",
                         "kg":"DevwI' jan jonwI qutluch muchwI'. Qap ra'wI', jonwI. sarqap ghom baj [taH GNU/Linux, Windows 'ej C++ 'ej jabwI' 'ej raS, bopummeH JAX-RS standbIngDaq ghItlh leghlu'ar reH jul Jersey qap, Java, Postgresql, Angularjs Dev. chaq je qap jonwI 'ej jInmol Apache, Tomcat 'ej SVN lo' GNU/LinuxpoQ jabwI' leH."
                     },
-                    "url":"http://fwtv.tv"
+                    "url":null
                 },
                 {
                     "title":{

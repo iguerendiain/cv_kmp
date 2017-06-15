@@ -1,5 +1,5 @@
 import { Component,Input,OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'work-item',
@@ -7,7 +7,7 @@ import { DataService } from './data.service';
   styleUrls: ['./workitem.component.css']
 })
 
-export class WorkItemComponent {
+export class WorkItemComponent extends DataSubscribedComponent{
   @Input() item:any;
   title:string;
   from:string;
@@ -15,10 +15,8 @@ export class WorkItemComponent {
   description:string;
   url:string;
 
-  constructor(private data:DataService){}
-
-  ngOnInit():void{
-    let lang = this.data.getLanguage();
+  updateData():void{
+    let lang = this.getLanguage();
     this.title = this.item.title[lang];
 
     let dateFrom = new Date(this.item.from*1000);
@@ -37,4 +35,18 @@ export class WorkItemComponent {
     this.description = this.item.description[lang];
     this.url = this.item.url;
   }
+
+
+  ngOnInit():void{
+    this.updateData();
+  }
+
+  onLanguageChanged(language:string):void{
+    this.updateData();
+  }
+
+  onCVDataChanged(cvData:any):void{
+    this.updateData();
+  }
+  
 }

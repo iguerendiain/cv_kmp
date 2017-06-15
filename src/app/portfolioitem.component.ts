@@ -1,5 +1,5 @@
 import { Component,Input,OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 @Component({
   selector: 'portfolio-item',
@@ -7,7 +7,7 @@ import { DataService } from './data.service';
   styleUrls: ['./portfolioitem.component.css']
 })
 
-export class PortfolioItemComponent {
+export class PortfolioItemComponent extends DataSubscribedComponent {
   @Input() project:any;
 
   title:string;
@@ -16,10 +16,21 @@ export class PortfolioItemComponent {
   items:string[];
   urls:any[];
 
-  constructor(private data:DataService){}
-  
   ngOnInit():void{
-    let lang = this.data.getLanguage();
+    this.updateData();
+  }
+
+  onLanguageChanged(language:string):void{
+    this.updateData();
+  }
+
+  onCVDataChanged(cvData:any):void{
+    this.updateData();
+  }
+
+  updateData():void{
+    let lang = this.getLanguage();
+
     this.icon = this.project.icon;
     this.title = this.project.title[lang];
     this.description = this.project.description[lang];
