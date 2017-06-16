@@ -15,6 +15,7 @@ import { PortfolioItemComponent } from './portfolioitem.component';
 import { ScreenTitleComponent } from './screentitle.component';
 import { TechItemComponent } from './techitem.component';
 import { WorkItemComponent } from './workitem.component';
+import { DataSubscribedComponent } from './datasubscribedcomponent';
 
 import { DataService } from './data.service';
 
@@ -28,7 +29,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
+    DataSubscribedComponent,
     NavbarComponent,
     PortfolioComponent,
     ScreenTitleComponent,

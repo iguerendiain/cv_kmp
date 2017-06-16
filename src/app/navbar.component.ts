@@ -9,10 +9,11 @@ import { DataSubscribedComponent } from './datasubscribedcomponent'
 
 export class NavbarComponent extends DataSubscribedComponent {
   title:string;
-  languages:[string];
+  languages:any[];
   portfolioTitle:string;
   cvTitle:string;
   contactTitle:string;
+  languageSelectorOpen:boolean = false;
 
   goToContact():void{
       window.scrollTo(0,document.body.scrollHeight);
@@ -20,6 +21,7 @@ export class NavbarComponent extends DataSubscribedComponent {
 
   setLanguage(language:string):void{
     this.setDataLanguage(language);
+    this.languageSelectorOpen = false;
   }
 
   onLanguageChanged(language:string):void{
@@ -33,9 +35,19 @@ export class NavbarComponent extends DataSubscribedComponent {
   updateData(cvdata:any):void{
     let lang = this.getLanguage();
     this.title = cvdata.navbar.title[lang];
-    this.languages = cvdata.languages;
     this.portfolioTitle = cvdata.navbar.menu.portfolio.title[lang];
     this.cvTitle = cvdata.navbar.menu.cv.title[lang];
     this.contactTitle = cvdata.navbar.menu.contact.title[lang];
+
+    this.languages = [];
+    for (let language of cvdata.languages){
+      this.languages.push({code:language.code,name:language.name[lang]});
+    }
+
+
+  }
+
+  toggleLanguageSelector():void{
+    this.languageSelectorOpen = !this.languageSelectorOpen;
   }
 }

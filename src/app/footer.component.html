@@ -1,8 +1,48 @@
 <div id="footer">
-    <ul>
-        <li>AV: {{avatar}}</li>
-        <li>IN: {{linkedin}}</li>
-        <li>GL: {{google}}</li>
-        <li>UI: {{creditsName}} - {{creditsLink}}</li>
-    </ul>
+    <screen-title [title]="title"></screen-title>
+
+    <div id="contactWidget">
+        <div id="contactData" class="row">
+            <div class="col-md-6 contactDataItem" id="google">
+                <img src="assets/gmail.png">
+                <img src="assets/hangouts.png">
+                <a href="mailto:{{google}}">{{google}}</a>
+            </div>
+            <div class="col-md-6 contactDataItem" id="linkedin">
+                <img src="assets/linkedin.png">
+                <a href="{{linkedin}}" target="_blank">LinkdIn</a>
+            </div>
+        </div>
+
+        <div id="avatar">
+            <img class="img-circle" src="{{avatar}}">
+        </div>
+    </div>
+
+    <div id="miniContactWidget" class="container">
+        <div id="avatar">
+            <img class="img-circle" src="{{avatar}}">
+        </div>
+
+        <div class="contactDataItem">
+            <img src="assets/gmail.png">
+            <img src="assets/hangouts.png">
+            <a href="mailto:{{google}}">{{google}}</a>
+        </div>
+
+        <div class="contactDataItem">
+            <img src="assets/linkedin.png">
+            <a href="{{linkedin}}" target="_blank">LinkedIn</a>            
+        </div>
+    </div>
+
+    <div id="bottomBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="uiCredits">
+                    {{creditsTitle}}: <a href="{{creditsLink}}">{{creditsName}}</a>
+                </div>
+            </div>
+        </div>
+    </div>  
 </div>

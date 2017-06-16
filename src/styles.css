@@ -1,3 +1,25 @@
+:root{
+    --color-primary-text:#FFFFFF;
+    --color-primary:#295869;
+    --color-primary-dark:#2a2a2a;
+    --color-accent:#a6cf00;
+    --color-accent-alt:#00abc4;
+}
+
 body{
-    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+    background-color: var(--color-primary-dark);
+    background-image: url('/assets/bg.png');
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary-text);
+    font-size:14px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
 }

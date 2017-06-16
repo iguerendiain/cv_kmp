@@ -1,5 +1,8 @@
-<div *ngIf="dataAvailable" id="portfolio">
+<div *ngIf="dataAvailable">
     <screen-title [title]="title"></screen-title>
-    <br />
-    <portfolio-item *ngFor="let project of projects" [project]="project"></portfolio-item>
+    <div class="container" id="portfolio">
+        <div class="row">
+            <portfolio-item *ngFor="let project of projects" [project]="project"></portfolio-item>
+        </div>
+    </div>
 </div>

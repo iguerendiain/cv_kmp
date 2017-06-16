@@ -1,0 +1,11 @@
+#title{
+    padding-left:6px;
+    padding-right:6px;
+    color:var(--color-primary);
+    font-weight:bold;
+}
+
+#description{
+    margin-left:24px;
+    margin-bottom:12px;
+}

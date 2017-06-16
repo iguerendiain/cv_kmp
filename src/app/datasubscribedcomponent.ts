@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { DataService, LANGUAGE_CHANGED_EVENT, CVDATA_CHANGED_EVENT } from './data.service';
 
-@Component({})
-export abstract class DataSubscribedComponent{
+@Component({template:""})
+export /*abstract*/ class DataSubscribedComponent{
     private subscription:Subscription;
 
     constructor(private data:DataService){
@@ -37,6 +37,9 @@ export abstract class DataSubscribedComponent{
         this.data.setLanguage(lang);
     }
 
-    abstract onLanguageChanged(language:string):void;
-    abstract onCVDataChanged(cvData:any):void;
+    // abstract onLanguageChanged(language:string):void;
+    // abstract onCVDataChanged(cvData:any):void;
+
+    onLanguageChanged(language:string):void{}
+    onCVDataChanged(cvData:any):void{}
 }

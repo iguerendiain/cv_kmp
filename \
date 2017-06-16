@@ -1,0 +1,60 @@
+server.modules = (
+	"mod_access",
+	"mod_alias",
+	"mod_compress",
+ 	"mod_redirect",
+        "mod_rewrite",
+)
+
+server.document-root        = "/mnt/"
+server.upload-dirs          = ( "/var/cache/lighttpd/uploads" )
+server.errorlog             = "/var/log/lighttpd/error.log"
+server.pid-file             = "/var/run/lighttpd.pid"
+server.username             = "www-data"
+server.groupname            = "www-data"
+dir-listing.activate	    = "enable"
+server.port                 = 80
+
+index-file.names            = ( "index.php", "index.html", "index.lighttpd.html" )
+url.access-deny             = ( "~", ".inc" )
+static-file.exclude-extensions = ( ".php", ".pl", ".fcgi" )
+
+compress.cache-dir          = "/var/cache/lighttpd/compress/"
+compress.filetype           = ( "application/javascript", "text/css", "text/html", "text/plain" )
+
+# default listening port for IPv6 falls back to the IPv4 port
+## Use ipv6 if available
+#include_shell "/usr/share/lighttpd/use-ipv6.pl " + server.port
+include_shell "/usr/share/lighttpd/create-mime.assign.pl"
+include_shell "/usr/share/lighttpd/include-conf-enabled.pl"
+
+$SERVER["socket"] == ":443" {
+	ssl.engine = "enable"
+	ssl.pemfile = "/etc/lighttpd/certs/lighttpd.pem"
+}
+
+$SERVER["socket"] == ":4788"{
+        proxy.server = (""=>(("host" => "127.0.0.1","port" => 4200)))
+}
+
+$HTTP["host"] == "smtm.local" {
+        server.document-root = "/mnt/sto/proyectos/showmethemoney/webapp/"
+        url.rewrite-if-not-file = (
+                "(.*)(\?*)(.*)" => "/#/$1$2"
+        )
+}
+
+$HTTP["host"] == "eisys.local" {
+        server.document-root = "/mnt/sto/proyectos/eisys/webapp/dist/"
+        url.rewrite-if-not-file = (
+                "(.*)(\?*)(.*)" => "/#/$1$2"
+        )
+}
+
+$HTTP["host"] == "aa.local" {
+        server.document-root = "/mnt/sto/proyectos/androidAuthority/webapp/"
+        url.rewrite-if-not-file = (
+                "(.*)(\?*)(.*)" => "/#/$1$2"
+        )
+}
+

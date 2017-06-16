@@ -1,4 +1,108 @@
 #footer{
-    background-color: goldenrod;
-    border: 5px inset gray;
+    border-bottom-width: 6px;
+    border-color: var(--color-accent);
+    border-bottom-style: solid;
+}
+
+#footer a{
+    color: var(--primary-text);
+}
+
+#footer a:hover{
+    color: var(--color-accent-alt);
+}
+
+#bottomBar{
+    background-color: var(--color-primary-dark);
+    height:36px;
+}
+
+#uiCredits{
+    text-align:center;
+    font-size:12px;
+    margin-top:8px;
+}
+
+#contactData{
+    margin-top:100px;
+    background-color: var(--color-primary);
+    height:39px;
+    border-radius:13px;
+    width:750px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#avatar{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#avatar img{
+    background-color: var(--color-primary);
+    padding:9px;
+}
+
+.contactDataItem{
+    padding-top:8px;
+}
+
+#google{
+    text-align:left;
+}
+
+#linkedin{
+    text-align:center;
+    padding-left:90px;
+}
+
+@media(max-width:992px){
+    #contactWidget{
+        display:none;
+    }
+
+    #miniContactWidget{
+        display:block;
+        margin-bottom:12px;
+    }
+
+    #avatar{
+        width:130px;
+    }
+
+    #avatar img{
+        width:130px;
+    }
+
+    .contactDataItem{
+        margin-top:12px;
+        background-color: var(--color-primary);
+        height:39px;
+        border-radius:13px;
+        margin-left:50px;
+        margin-right:50px;
+        text-align:center;
+    }
+}
+
+@media(min-width:992px){
+    #contactWidget{
+        display:block;
+        height:140px;
+    }
+
+    #miniContactWidget{
+        display:none;
+    }
+
+    #avatar{
+        position:relative;
+        top:-120px;
+        text-align:center;
+        width:200px;
+    }
+
+    #avatar img{
+        width:200px;
+    }
 }

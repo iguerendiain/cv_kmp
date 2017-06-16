@@ -1,0 +1,26 @@
+#title{
+    padding-left:6px;
+    padding-right:6px;
+    color:var(--color-primary);
+    font-weight:bold;    
+}
+
+#title a{
+    color:var(--color-primary);
+}
+
+#title a:hover{
+    color:var(--color-accent-alt);
+}
+
+#descriptionImageContainer{
+    position:relative;
+    margin-left:24px;
+}
+
+#description{
+    margin-top:-20px;
+    margin-left:36px;
+    margin-right:36px;
+    margin-bottom:12px;
+}

@@ -27,15 +27,23 @@ export class WorkItemComponent extends DataSubscribedComponent{
       dateTo = null;
     }
 
-    this.from = dateFrom.toString();
+    this.from = this.formatDate(dateFrom);
     if (dateTo!=null){
-      this.to = dateTo.toString();
+      this.to = this.formatDate(dateTo);
     }
     
     this.description = this.item.description[lang];
     this.url = this.item.url;
   }
 
+  formatDate(date:Date):string{
+    var months = this.getCVData().months[this.getLanguage()];
+    
+    let month = months[date.getMonth()];
+    let year = date.getFullYear();
+
+    return month+" "+year;
+  }
 
   ngOnInit():void{
     this.updateData();

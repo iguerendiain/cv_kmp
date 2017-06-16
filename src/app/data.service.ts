@@ -33,7 +33,19 @@ export class DataService{
     }
 
     autoSetLanguage():void{
-        this.setLanguage(this.cvData.defaultLanguage);
+        let defaultLanguage = this.cvData.defaultLanguage;
+        let browserLanguage = null;
+        let rawBrowserLanguage = navigator.language;
+
+        if (rawBrowserLanguage!=null && rawBrowserLanguage.length > 0 && rawBrowserLanguage.indexOf("-") > 0){
+            browserLanguage = rawBrowserLanguage.split("-")[0];
+        }
+
+        if (browserLanguage!=null){
+            this.setLanguage(browserLanguage);
+        }else{
+            this.setLanguage(defaultLanguage);
+        }
     }
 
     setLanguage(language:string):void{

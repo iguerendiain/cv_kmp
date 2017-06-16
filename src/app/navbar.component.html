@@ -1,13 +1,24 @@
 <div id="navBar">
-    {{title}}
-
-    <ul>
-        <li routerLink="/portfolio">{{portfolioTitle}}</li>
-        <li routerLink="/cv">{{cvTitle}}</li>
-        <li (click)="goToContact()">{{contactTitle}}</li>
-    </ul>
-
-    <ul>
-        <li (click)="setLanguage(l)" *ngFor="let l of languages">{{l}}</li>
-    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 title">
+                {{title}}
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <div class="menuItem clickable" routerLink="/portfolio" routerLinkActive="active">{{portfolioTitle}}</div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <div class="menuItem clickable" routerLink="/cv" routerLinkActive="active">{{cvTitle}}</div>
+            </div>
+            <div class="col-xs-3 col-md-2">
+                <div class="menuItem clickable" (click)="goToContact()">{{contactTitle}}</div>
+            </div>
+            <div class="col-xs-3 col-md-2" id="langSelectorContainer">
+                <img src="assets/langSelector.png" class="clickable" (click)="toggleLanguageSelector()" />
+            </div>
+        </div>
+        <div id="languageSelector" *ngIf="languageSelectorOpen">
+            <div class="languageSelectorItem clickable" (click)="setLanguage(l.code)" *ngFor="let l of languages">{{l.name}}</div>
+        </div>        
+    </div>
 </div>

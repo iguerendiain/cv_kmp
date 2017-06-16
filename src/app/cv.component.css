@@ -1,4 +1,6 @@
-#cv{
-    background-color: chocolate;
-    border: 5px inset aquamarine;
+.cvCategory{
+    background-color:var(--color-primary-dark);
+    padding-bottom:12px;
+    margin-top:12px;
+    margin-bottom:24px;
 }

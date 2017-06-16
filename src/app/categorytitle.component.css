@@ -1,0 +1,22 @@
+#container{
+    height:40px;
+}
+
+#line{
+    position:relative;
+    background-color:var(--color-accent);
+    height:1px;
+    margin-right:12px;
+    top:0px;
+}
+
+#title{
+    top:-12px;
+    color:var(--color-accent);
+    display:inline-block;
+    position:relative;
+    padding-left:24px;
+    padding-right:5px;
+    background-color:var(--color-primary-dark);
+}
+

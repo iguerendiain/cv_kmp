@@ -8,9 +8,11 @@ import { DataSubscribedComponent } from './datasubscribedcomponent'
 })
 
 export class FooterComponent extends DataSubscribedComponent{
+  title:string = null;
   avatar:string = null;
   linkedin:string = null;
   google:string = null;
+  creditsTitle:string = null;
   creditsName:string = null;
   creditsLink:string = null;
 
@@ -23,9 +25,11 @@ export class FooterComponent extends DataSubscribedComponent{
   }
 
   updateData(cvdata:any):void{
+    this.title = cvdata.contact.title[this.getLanguage()];
     this.avatar = cvdata.contact.avatar;
     this.linkedin = cvdata.contact.linkedin;
     this.google = cvdata.contact.google;
+    this.creditsTitle = cvdata.contact.UIcredits.title[this.getLanguage()];
     this.creditsName = cvdata.contact.UIcredits.name;
     this.creditsLink = cvdata.contact.UIcredits.link;
   }

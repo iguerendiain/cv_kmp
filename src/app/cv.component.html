@@ -1,18 +1,20 @@
 <div id="cv" *ngIf="dataAvailable">
     <screen-title [title]="title"></screen-title>
 
-    <div class="cvCategory">
-        <category-title [title]="workTitle"></category-title>
-        <work-item *ngFor="let work of workContent" [item]="work"></work-item>
-    </div>
+    <div class="container">
+        <div class="cvCategory">
+            <category-title [title]="workTitle"></category-title>
+            <work-item *ngFor="let work of workContent" [item]="work"></work-item>
+        </div>
 
-    <div class="cvCategory">
-        <category-title [title]="techTitle"></category-title>
-        <tech-item *ngFor="let tech of techContent" [item]="tech"></tech-item>
-    </div>
+        <div class="cvCategory">
+            <category-title [title]="techTitle"></category-title>
+            <tech-item *ngFor="let tech of techContent" [item]="tech"></tech-item>
+        </div>
 
-    <div class="cvCategory">
-        <category-title [title]="langTitle"></category-title>
-        <language-item *ngFor="let language of langContent" [item]="language"></language-item>
+        <div class="cvCategory">
+            <category-title [title]="langTitle"></category-title>
+            <language-item *ngFor="let language of langContent" [item]="language"></language-item>
+        </div>
     </div>
 </div>

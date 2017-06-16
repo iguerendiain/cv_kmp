@@ -1,3 +1,15 @@
-<h3>{{title}}<span *ngIf="url">({{url}})</span></h3>
-<h2>{{from}}<span *ngIf="to"> ~ {{to}}</span></h2>
-<div>{{description}}</div>
+<div id="title">
+    →
+    <a *ngIf="url" href="{{url}}" target="_blank">{{title}}</a>
+    <span *ngIf="!url">{{title}}</span>
+    //
+    {{from}}
+    <span *ngIf="to"> ~ {{to}}</span>
+</div>
+
+<div>
+    <div id="descriptionImageContainer">
+        <img src="assets/listBullet.png">
+    </div>
+    <div id="description">{{description}}</div>    
+</div>

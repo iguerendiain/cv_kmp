@@ -1,5 +1,7 @@
 import { Component,Input,OnInit } from '@angular/core';
-import { DataSubscribedComponent } from './datasubscribedcomponent'
+import { DataSubscribedComponent } from './datasubscribedcomponent';
+import { DomSanitizer,SafeStyle } from '@angular/platform-browser';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'portfolio-item',
@@ -11,10 +13,15 @@ export class PortfolioItemComponent extends DataSubscribedComponent {
   @Input() project:any;
 
   title:string;
+  banner:SafeStyle;
   icon:string;
   description:string;
   items:string[];
   urls:any[];
+
+  constructor(private domSanitizer:DomSanitizer,private dataToSuper:DataService){
+    super(dataToSuper);
+  }
 
   ngOnInit():void{
     this.updateData();
@@ -31,6 +38,7 @@ export class PortfolioItemComponent extends DataSubscribedComponent {
   updateData():void{
     let lang = this.getLanguage();
 
+    this.banner = this.domSanitizer.bypassSecurityTrustStyle("url('"+this.project.icon+"')");
     this.icon = this.project.icon;
     this.title = this.project.title[lang];
     this.description = this.project.description[lang];

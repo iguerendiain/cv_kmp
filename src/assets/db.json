@@ -1,6 +1,30 @@
 {
-    "languages":["es","en","kg"],
-    "defaultLanguage":"en",
+    "languages":[
+        {
+            "code":"es",
+            "name":{
+                "es":"Español",
+                "en":"Spanish",
+                "kg":null
+            }
+        },
+        {
+            "code":"en",
+            "name":{
+                "es":"Inglés",
+                "en":"English",
+                "kg":null
+            }
+        }
+    ],
+    "defaultLanguage":"es",
+    "months":{
+        "es":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio",
+        "Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
+        "en":["January","February","March","April","May","June","July",
+        "August","September","October","November", "December"],
+        "kg":[]
+    },
     "navbar":{
         "title":{
             "es":"Ignacio Guerendiain",
@@ -10,14 +34,14 @@
         "menu":{
             "portfolio":{
                 "title":{
-                    "es":"Trabajos seleccionados",
+                    "es":"Portfolio",
                     "en":"Portfolio",
                     "kg":null
                 }
             },
             "cv":{
                 "title":{
-                    "es":"Curriculum Vitae",
+                    "es":"Currículum",
                     "en":"Resume",
                     "kg":null
                 }
@@ -33,7 +57,7 @@
     },
     "portfolio":{
         "title":{
-            "es":"Proyectos Seleccionados",
+            "es":"Proyectos Destacados",
             "en":"Portfolio",
             "kg":"WIv JInmol"
         },
@@ -41,26 +65,69 @@
             {
                 "id":"cv",
                 "title":{
-                    "es":"Esto",
-                    "en":"This",
+                    "es":"Portfolio",
+                    "en":"Portfolio",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/cv.png",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                    {
+                        "title":{
+                            "es":"Proyecto personal",
+                            "en":"Personal project",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Angular 4",
+                            "en":"Angular 4",
+                            "kg":"Angular 4"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Bootstrap",
+                            "en":"Bootstrap",
+                            "kg":"Bootstrap"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Typescript",
+                            "en":"Typescript",
+                            "kg":"Typescript"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"i18n",
+                            "en":"i18n",
+                            "kg":"i18n"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Responsive",
+                            "en":"Responsive",
+                            "kg":"Responsive"
+                        }
+                    }
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/github.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
+                            "es":"Github",
+                            "en":"Github",
+                            "kg":"Github"
                         },
-                        "url":"http://sitio.com"
+                        "url":"https://github.com/iguerendiain/cv"
                     }
                 ]
             },
@@ -71,24 +138,92 @@
                     "en":"Brewers",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/brewers.png",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
-                "urls":[
+                "items":[
                     {
-                        "icon":"imageUrl.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
-                        },
-                        "url":"http://sitio.com"
+                            "es":"Proyecto personal",
+                            "en":"Personal project",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Node.JS",
+                            "en":"Node.JS",
+                            "kg":"Node.JS"
+                        }
+                    },                    
+                    {
+                        "title":{
+                            "es":"Restful",
+                            "en":"Restful",
+                            "kg":"Restful"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Express",
+                            "en":"Express",
+                            "kg":"Express"
+                        }
+                    },                    
+                    {
+                        "title":{
+                            "es":"Backend",
+                            "en":"Backend",
+                            "kg":"Backend"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Webapp",
+                            "en":"Webapp",
+                            "kg":"Webapp"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Angular 4",
+                            "en":"Angular 4",
+                            "kg":"Angular 4"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Bootstrap",
+                            "en":"Bootstrap",
+                            "kg":"Bootstrap"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"JSON",
+                            "en":"JSON",
+                            "kg":"JSON"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Google login",
+                            "en":"Google login",
+                            "kg":"Google login"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"PostgreSQL",
+                            "en":"PostgreSQL",
+                            "kg":"PostgreSQL"
+                        }
                     }
-                ]
+                ],
+                "urls":[]
             },
             {
                 "id":"eisys",
@@ -97,22 +232,86 @@
                     "en":"Eisys Cloud CM",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/eisys.png",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                    {
+                        "title":{
+                            "es":"Proyecto personal",
+                            "en":"Personal project",
+                            "kg":""
+                        }
+                    },                
+                    {
+                        "title":{
+                            "es":"Node.JS",
+                            "en":"Node.JS",
+                            "kg":"Node.JS"
+                        }
+                    },                
+                    {
+                        "title":{
+                            "es":"Administración de contenido",
+                            "en":"Content management",
+                            "kg":""
+                        }
+                    },                
+                    {
+                        "title":{
+                            "es":"Backend",
+                            "en":"Backend",
+                            "kg":"Backend"
+                        }
+                    },                
+                    {
+                        "title":{
+                            "es":"Webapp",
+                            "en":"Webapp",
+                            "kg":"Webapp"
+                        }
+                    },                
+                    {
+                        "title":{
+                            "es":"RESTful",
+                            "en":"RESTful",
+                            "kg":"RESTful"
+                        }
+                    },                
+                    {
+                        "title":{
+                            "es":"Express",
+                            "en":"Express",
+                            "kg":"Express"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"PostgreSQL",
+                            "en":"PostgreSQL",
+                            "kg":"PostgreSQL"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Control de acceso avanzado",
+                            "en":"Advanced access control",
+                            "kg":""
+                        }
+                    }
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/www.png",
                         "title":{
                             "es":"Sitio",
                             "en":"Site",
                             "kg":null
                         },
-                        "url":"http://sitio.com"
+                        "url":"http://www.eisys.com.ar"
                     }
                 ]
             },
@@ -123,22 +322,137 @@
                     "en":"Android Authority",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/aa.jpg",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                    {
+                        "title":{
+                            "es":"Líder de equipo",
+                            "en":"Team leader",
+                            "kg":null
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":null
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Retrofit",
+                            "en":"Retrofit",
+                            "kg":"Retrofit"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Backend",
+                            "en":"Backend",
+                            "kg":"Backend"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Node.JS",
+                            "en":"Node.JS",
+                            "kg":"Node.JS"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"MongoDB",
+                            "en":"MongoDB",
+                            "kg":"MongoDB"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"SQLite",
+                            "en":"SQLite",
+                            "kg":"SQLite"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Youtube",
+                            "en":"Youtube",
+                            "kg":"Youtube"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Podcast Player",
+                            "en":"Podcast Player",
+                            "kg":"Podcast Player"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Animations",
+                            "en":"Animations",
+                            "kg":"Animations"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Cahce local",
+                            "en":"Local cache",
+                            "kg":"Local cache"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Wordpress",
+                            "en":"Wordpress",
+                            "kg":"Wordpress"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Parseo de HTML",
+                            "en":"HTML parsing",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"RESTful",
+                            "en":"RESTful",
+                            "kg":"RESTful"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Notificaciones push",
+                            "en":"Push notifications",
+                            "kg":""
+                        }
+                    }
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/www.png",
                         "title":{
                             "es":"Sitio",
                             "en":"Site",
                             "kg":null
                         },
-                        "url":"http://sitio.com"
+                        "url":"http://www.androidauthority.com"
+                    },
+                    {
+                        "icon":"assets/googlePlay.png",
+                        "title":{
+                            "es":"Google Play",
+                            "en":"Google Play",
+                            "kg":"Google Play"
+                        },
+                        "url":"https://play.google.com/store/apps/details?id=com.androidauthority.app"
                     }
                 ]
             },
@@ -149,22 +463,65 @@
                     "en":"Eulertastic",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/eulertastic.jpg",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                    {
+                        "title":{
+                            "es":"Proyecto personal",
+                            "en":"Personal project",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Video juego",
+                            "en":"Videogame",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Ingenio",
+                            "en":"Puzzle",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"LibGDX",
+                            "en":"LibGDX",
+                            "kg":"LibGDX"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Auto generado de niveles",
+                            "en":"Level auto generation",
+                            "kg":""
+                        }
+                    }
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/googlePlay.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
+                            "es":"Google Play",
+                            "en":"Google Play",
+                            "kg":"Google Play"
                         },
-                        "url":"http://sitio.com"
+                        "url":"https://play.google.com/store/apps/details?id=siema.cg.euler.android"
                     }
                 ]
             },
@@ -175,22 +532,92 @@
                     "en":"Freeland",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/freeland.jpg",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                    {
+                        "title":{
+                            "es":"Proyecto personal",
+                            "en":"Personal project",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Video juego",
+                            "en":"Videogame",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Plataformas 2D",
+                            "en":"2D platformer",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Como Sonic en 2D",
+                            "en":"2D Sonic like",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"LibGDX",
+                            "en":"LibGDX",
+                            "kg":"LibGDX"
+                        }
+                    }
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/googlePlay.png",
+                        "title":{
+                            "es":"Google Play",
+                            "en":"Google Play",
+                            "kg":"Google Play"
+                        },
+                        "url":"https://play.google.com/store/apps/details?id=siema.freeland"
+                    },
+                    {
+                        "icon":"assets/twitter.png",
+                        "title":{
+                            "es":"Twitter",
+                            "en":"Twitter",
+                            "kg":"Twitter"
+                        },
+                        "url":"https://twitter.com/FreelandTheGame"
+                    },
+                    {
+                        "icon":"assets/facebook.png",
+                        "title":{
+                            "es":"Facebook",
+                            "en":"Facebook",
+                            "kg":"Facebook"
+                        },
+                        "url":"https://www.facebook.com/freelandthegame"
+                    },
+                    {
+                        "icon":"assets/www.png",
                         "title":{
                             "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
+                            "en":"Sitio",
+                            "kg":"Sitio"
                         },
-                        "url":"http://sitio.com"
+                        "url":"http://freeland.siema.com.ar/"
                     }
                 ]
             },
@@ -201,24 +628,43 @@
                     "en":"Plan Óvalo",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/planovalo.png",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
-                "urls":[
+                "items":[
                     {
-                        "icon":"imageUrl.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
-                        },
-                        "url":"http://sitio.com"
+                            "es":"Proyecto personal",
+                            "en":"Personal project",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Parseo de HTML",
+                            "en":"HTML parsing",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"No oficial",
+                            "en":"Unofficial",
+                            "kg":""
+                        }
                     }
-                ]
+                ],
+                "urls":[]
             },
             {
                 "id":"fansworld",
@@ -227,48 +673,117 @@
                     "en":"Fansworld.TV",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/fwtv.png",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
-                "urls":[
+                "items":[
                     {
-                        "icon":"imageUrl.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
-                        },
-                        "url":"http://sitio.com"
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Reproductor VOD",
+                            "en":"VOD player",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Reproductor en vivo",
+                            "en":"Live streaming",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"RESTful",
+                            "en":"RESTful",
+                            "kg":"RESTful"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Chat",
+                            "en":"Chat",
+                            "kg":"Chat"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Retrofit",
+                            "en":"Retrofit",
+                            "kg":"Retrofit"
+                        }
                     }
-                ]
+                ],
+                "urls":[]
             },
             {
                 "id":"angrywords",
                 "title":{
                     "es":"Apalabrados",
-                    "en":"Wordcrack",
+                    "en":"Angry Words",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/angrywords.png",
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                    {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Video juego",
+                            "en":"Videogame",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Ingenio",
+                            "en":"Puzzle",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Multijugador",
+                            "en":"Multiplayer",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Refactor de plataforma",
+                            "en":"Platform refactor",
+                            "kg":""
+                        }
+                    }        
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/googlePlay.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
+                            "es":"Google Play",
+                            "en":"Google Play",
+                            "kg":"Google Play"
                         },
-                        "url":"http://sitio.com"
+                        "url":"https://play.google.com/store/apps/details?id=com.etermax.apalabrados.lite"
                     }
                 ]
             },
@@ -276,24 +791,61 @@
                 "id":"angrymix",
                 "title":{
                     "es":"Mezcladitos",
-                    "en":"Wordmix",
+                    "en":"Wordcrack",
                     "kg":null
                 },
+                "icon":"assets/portfolio/wordcrack.png",                
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                     {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Video juego",
+                            "en":"Videogame",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Ingenio",
+                            "en":"Puzzle",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Multijugador",
+                            "en":"Multiplayer",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Andengine",
+                            "en":"Andengine",
+                            "kg":"Andengine"
+                        }
+                    }
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/googlePlay.png",
                         "title":{
                             "es":"Sitio",
                             "en":"Site",
                             "kg":null
                         },
-                        "url":"http://sitio.com"
+                        "url":"https://play.google.com/store/apps/details?id=com.etermax.wordcrack.lite"
                     }
                 ]
             },
@@ -304,22 +856,44 @@
                     "en":"Awayfind",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/awayfind.png",                
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
+                "items":[
+                     {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"RESTful",
+                            "en":"RESTful",
+                            "kg":"RESTful"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Como Google priority inbox",
+                            "en":"Google priority Inbox like",
+                            "kg":""
+                        }
+                    }        
+                ],
                 "urls":[
                     {
-                        "icon":"imageUrl.png",
+                        "icon":"assets/googlePlay.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
+                            "es":"Google Play",
+                            "en":"Google Play",
+                            "kg":"Google Play"
                         },
-                        "url":"http://sitio.com"
+                        "url":"https://play.google.com/store/apps/details?id=com.awayfind.app"
                     }
                 ]
             },
@@ -330,23 +904,43 @@
                     "en":"King Bandido",
                     "kg":null
                 },
+                "icon":"assets/portfolio/kingbandido.png",                
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
-                "urls":[
+                "items":[
                     {
-                        "icon":"imageUrl.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
-                        },
-                        "url":"http://sitio.com"
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Video juego",
+                            "en":"Videogame",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Portado de iOS",
+                            "en":"Ported from iOS",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Andengine",
+                            "en":"Andengine",
+                            "kg":"Andengine"
+                        }
                     }
-                ]
+                ],
+                "urls":[]
             },
             {
                 "id":"josecomes",
@@ -355,24 +949,43 @@
                     "en":"Jose comes to USA",
                     "kg":null
                 },
-                "icon":"imageUrl.png",
+                "icon":"assets/portfolio/jose.png",                
                 "description":{
                     "es":null,
                     "en":null,
                     "kg":null
                 },
-                "items":[],
-                "urls":[
+                "items":[
                     {
-                        "icon":"imageUrl.png",
                         "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
-                        },
-                        "url":"http://sitio.com"
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":"Android"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Video juego",
+                            "en":"Videogame",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Portado de iOS",
+                            "en":"Ported from iOS",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Andengine",
+                            "en":"Andengine",
+                            "kg":"Andengine"
+                        }
                     }
-                ]
+                ],
+                "urls":[]
             }
         ]
     },
@@ -649,7 +1262,7 @@
                     },
                     "description":{
                         "es":"Básico",
-                        "en":"Baisc",
+                        "en":"Basic",
                         "kg":null
                     }
                 }
@@ -657,10 +1270,20 @@
         }
     },
     "contact":{
-        "avatar":"imageURL.png",
+        "title":{
+            "es":"Contacto",
+            "en":"Contact",
+            "kg":null
+        },
+        "avatar":"assets/avatar.png",
         "linkedin":"https://www.linkedin.com/in/ignacio-guerendiain-0b589038",
         "google":"iguerendiain@gmail.com",
         "UIcredits":{
+            "title":{
+                "es":"Diseño",
+                "en":"Design",
+                "kg":null
+            },
             "name":"Guillermina Caputo",
             "link":"mailto:guillerminac@gmail.com"
         }
