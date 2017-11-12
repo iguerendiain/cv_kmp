@@ -37,6 +37,8 @@ export class WorkItemComponent extends DataSubscribedComponent{
   }
 
   formatDate(date:Date):string{
+    date.setTime(date.getTime() + 3600*3*1000);
+
     var months = this.getCVData().months[this.getLanguage()];
     
     let month = months[date.getMonth()];
