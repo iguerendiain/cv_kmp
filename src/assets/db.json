@@ -25,6 +25,13 @@
         "August","September","October","November", "December"],
         "kg":[]
     },
+    "pdf":{
+        "auto":{
+            "es":"Este documento fue automáticamente generado",
+            "en":"This document was automatically generated",
+            "kg":null
+        }
+    },
     "navbar":{
         "title":{
             "es":"Ignacio Guerendiain",
