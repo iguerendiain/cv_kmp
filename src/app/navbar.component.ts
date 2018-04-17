@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataSubscribedComponent } from './datasubscribedcomponent'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'nav-bar',
@@ -16,7 +17,23 @@ export class NavbarComponent extends DataSubscribedComponent {
   languageSelectorOpen:boolean = false;
 
   goToContact():void{
-      window.scrollTo(0,document.body.scrollHeight);
+    this.scrollTo('footer');
+  }
+
+  goToPortfolio():void{
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000);    
+  }
+
+  goToCV():void{
+    this.scrollTo('cv');
+  }
+
+  private scrollTo(domID:string):void{
+    $('html, body').animate({
+      scrollTop: $(`#${domID}`).offset().top - 100
+    }, 1000);    
   }
 
   setLanguage(language:string):void{

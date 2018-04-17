@@ -17,7 +17,7 @@
             }
         }
     ],
-    "defaultLanguage":"es",
+    "defaultLanguage":"en",
     "months":{
         "es":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio",
         "Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
@@ -196,9 +196,9 @@
                     },
                     {
                         "title":{
-                            "es":"Angular 4",
-                            "en":"Angular 4",
-                            "kg":"Angular 4"
+                            "es":"Angular",
+                            "en":"Angular",
+                            "kg":"Angular"
                         }
                     },
                     {
@@ -255,11 +255,25 @@
                     },                
                     {
                         "title":{
-                            "es":"Node.JS",
-                            "en":"Node.JS",
-                            "kg":"Node.JS"
+                            "es":"Node",
+                            "en":"Node",
+                            "kg":"Node"
                         }
-                    },                
+                    },
+                    {
+                        "title":{
+                            "es":"Angular",
+                            "en":"Angular",
+                            "kg":"Angular"
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Typescript",
+                            "en":"Typescript",
+                            "kg":"Typescript"
+                        }
+                    },                    
                     {
                         "title":{
                             "es":"Administración de contenido",
@@ -401,7 +415,7 @@
                     },
                     {
                         "title":{
-                            "es":"Animations",
+                            "es":"Animaciones",
                             "en":"Animations",
                             "kg":"Animations"
                         }
@@ -1004,9 +1018,9 @@
         },
         "work":{
             "title":{
-                "es":"Experiencia laboral",
-                "en":"Experience",
-                "kg":"SIQpu'bogh"
+                "es":"Experiencia laboral seleccionada",
+                "en":"Selected work history",
+                "kg":""
             },
             "content":[
                 {
@@ -1023,21 +1037,6 @@
                         "kg":"Android Backend 'ej tlhab jonwI'"
                     },
                     "url":null
-                },
-                {
-                    "title":{
-                        "es":"Indeba",
-                        "en":"Indeba",
-                        "kg":"Indeba"
-                    },
-                    "from":1388534400,
-                    "to":null,
-                    "description":{
-                        "es":"CTO / Desarrollador Android y de backend",
-                        "en":"CTO / Android and backend developer",
-                        "kg":"CTO / Android Backend 'ej tlhab jonwI'"
-                    },
-                    "url":"http://indeba.com"
                 },
                 {
                     "title":{
@@ -1068,21 +1067,6 @@
                         "kg":"DevwI' jan jonwI qutluch muchwI'. Qap ra'wI', jonwI. sarqap ghom baj [taH GNU/Linux, Windows 'ej C++ 'ej jabwI' 'ej raS, bopummeH JAX-RS standbIngDaq ghItlh leghlu'ar reH jul Jersey qap, Java, Postgresql, Angularjs Dev. chaq je qap jonwI 'ej jInmol Apache, Tomcat 'ej SVN lo' GNU/LinuxpoQ jabwI' leH."
                     },
                     "url":null
-                },
-                {
-                    "title":{
-                        "es":"Three Pillar Global",
-                        "en":"Three Pillar Global",
-                        "kg":"Three Pillar Global"
-                    },
-                    "from":1338508800,
-                    "to":1341100800,
-                    "description":{
-                        "es":"Parte de un equipo de investigación recién formado para comenzar con el desarrollo de aplicaciones en HTML 5.",
-                        "en":"Part of a newly created research team for the creation of HTML5 applications.",
-                        "kg":"NItlhDu' je, chu' chenmoH Qul ghom HTML5 ghun chenmoH."
-                    },
-                    "url":"https://www.3pillarglobal.com/"
                 },
                 {
                     "title":{
@@ -1158,28 +1142,13 @@
                         "kg":null
                     },
                     "url":"http://webmind.com.ar/"
-                },
-                {
-                    "title":{
-                        "es":"IBM",
-                        "en":"IBM",
-                        "kg":"IBM"
-                    },
-                    "from":1093996800,
-                    "to":1101859200,
-                    "description":{
-                        "es":"Operador de Contact Center para LomaNegra, Lomax, FerroSur, AT&T, HSBC y otros en español e inglés hablado y escrito. Soporte para SAP, Active Directory, Lotus Notes, conexión a internet por dial up y VPN, organización centralizada de contacto por inconvenientes de funcionamiento en cajeros automáticos.",
-                        "en":"Contact Center operator for LomaNegra, Lomax, FerroSur, AT&T, HSBC and others in spanish and english spoken and written. Support for SAP, Active Directory, Lotus Notes, dialUp internet and VPN connection. Centralized coordination for ATM problem solving.",
-                        "kg":null
-                    },
-                    "url":null
                 }
             ]
         },
         "tech":{
             "title":{
-                "es":"Experiencia técnica seleccionada",
-                "en":"Selected technical experience",
+                "es":"Capacidades técnicas seleccionadas",
+                "en":"Selected technical skills",
                 "kg":""
             },
             "content":[
@@ -1195,10 +1164,9 @@
                         "Otto",
                         "ActiveAndroid",
                         "Roboguice",
-                        "Node.JS",
+                        "Node",
                         "Express",
                         "Mongoose",
-                        "Browserify",
                         "LibGDX",
                         "Angular",
                         "Typescript",
@@ -1256,8 +1224,8 @@
                         "kg":null
                     },
                     "description":{
-                        "es":"Lectura, escritura y comprensión oral avanzada. Expresión oral intermedia.",
-                        "en":"Advanced reading, writing and listening. Intermediate speaking.",
+                        "es":"Lectura, escritura y comprensión oral avanzada. Expresión oral avanzada-intermedia.",
+                        "en":"Advanced reading, writing and comprehension. Advanded-Intermediate speaking.",
                         "kg":null
                     }
                 },

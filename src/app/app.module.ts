@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
@@ -19,13 +19,13 @@ import { DataSubscribedComponent } from './datasubscribedcomponent';
 
 import { DataService } from './data.service';
 
-const routes: Routes = [
-  {path:'portfolio', component:PortfolioComponent },
-  {path:'cv', component:CVComponent },
-  {path:'w', component:ScreenTitleComponent },
-  {path:'**',redirectTo:'/portfolio',pathMatch:'full'},
-  {path:'',redirectTo:'/portfolio',pathMatch:'full'}
-];
+// const routes: Routes = [
+//   {path:'portfolio', component:PortfolioComponent },
+//   {path:'cv', component:CVComponent },
+//   {path:'w', component:ScreenTitleComponent },
+//   {path:'**',redirectTo:'/portfolio',pathMatch:'full'},
+//   {path:'',redirectTo:'/portfolio',pathMatch:'full'}
+// ];
 
 @NgModule({
   declarations: [
@@ -44,8 +44,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    RouterModule.forRoot(routes)
+    HttpModule/*,
+    RouterModule.forRoot(routes)*/
   ],
   providers: [
     DataService

@@ -5,10 +5,10 @@
                 {{title}}
             </div>
             <div class="col-xs-3 col-md-2">
-                <div class="menuItem clickable" routerLink="/portfolio" routerLinkActive="active">{{portfolioTitle}}</div>
+                <div class="menuItem clickable" (click)="goToPortfolio()">{{portfolioTitle}}</div>
             </div>
             <div class="col-xs-3 col-md-2">
-                <div class="menuItem clickable" routerLink="/cv" routerLinkActive="active">{{cvTitle}}</div>
+                <div class="menuItem clickable" (click)="goToCV()">{{cvTitle}}</div>
             </div>
             <div class="col-xs-3 col-md-2">
                 <div class="menuItem clickable" (click)="goToContact()">{{contactTitle}}</div>
