@@ -1025,6 +1025,21 @@
             "content":[
                 {
                     "title":{
+                        "es":"Serprosurca",
+                        "en":"Serprosurca",
+                        "kg":"Serprosurca"
+                    },
+                    "from":1525651200,
+                    "to":null,
+                    "description":{
+                        "es":"Desarrollador Android en Kotlin para la aplicación que utiliza la emperesa para realizar sus tareas de investigación de mercado. Grabación de video, formularios dinámicos y subidas de archivos son algunas de las tareas que realiza la aplicación. También participo del desarrollo del backend en Node.JS sobre Moleculer",
+                        "en":"Kotlin Android developer for the company' app which is used to perform its market research tasks. Video recording, dynamic forms and file uploads are som of the app's features. I also take part on backend development using Node.JS on the Moleculer framework",
+                        "kg":""
+                    },
+                    "url":"https://spds.info"
+                },
+                {
+                    "title":{
                         "es":"Independiente",
                         "en":"Freelancer",
                         "kg":"Tlhab"
