@@ -70,6 +70,84 @@
         },
         "projects":[
             {
+                "id":"cardsnacks",
+                "title":{
+                    "es":"CardSnacks",
+                    "en":"CardSnacks",
+                    "kg":null
+                },
+                "icon":"assets/portfolio/cardsnacks.png",
+                "description":{
+                    "es":null,
+                    "en":null,
+                    "kg":null
+                },
+                "items":[
+                    {
+                        "title":{
+                            "es":"Android",
+                            "en":"Android",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Kotlin",
+                            "en":"Kotlin",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"AndroidX",
+                            "en":"AndroidX",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Animaciones",
+                            "en":"Animations",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Producción multimedia",
+                            "en":"Media production",
+                            "kg":""
+                        }
+                    },
+                    {
+                        "title":{
+                            "es":"Canvas",
+                            "en":"Canvas",
+                            "kg":""
+                        }
+                    }
+                ],
+                "urls":[
+                    {
+                        "icon":"assets/www.png",
+                        "title":{
+                            "es":"Sitio",
+                            "en":"Site",
+                            "kg":""
+                        },
+                        "url":"https://www.cardsnacks.com/"
+                    },
+		    {
+			"icon":"assets/googlePlay.png",
+			"title":{
+			    "es":"Google Play",
+			    "en":"Google Play",
+			    "kg":""
+			},
+			"url":"https://play.google.com/store/apps/details?id=mobigram.cardsnacks"
+		    }
+                ]
+            },
+            {
                 "id":"cv",
                 "title":{
                     "es":"Portfolio",
@@ -322,17 +400,6 @@
                             "en":"Advanced access control",
                             "kg":""
                         }
-                    }
-                ],
-                "urls":[
-                    {
-                        "icon":"assets/www.png",
-                        "title":{
-                            "es":"Sitio",
-                            "en":"Site",
-                            "kg":null
-                        },
-                        "url":"http://www.eisys.com.ar"
                     }
                 ]
             },
@@ -1025,15 +1092,29 @@
             "content":[
                 {
                     "title":{
+                        "es":"CardSnacks",
+                        "en":"CardSnacks",
+                        "kg":""
+                    },
+                    "from":1569934825,
+                    "description":{
+                        "es":"Encargado de desarrollar la versión para Android de la aplicación de envío de tarjetas de felicitación.",
+                        "en":"In charge of development of the Android version of the greeting cards sending app.",
+                        "kg":""
+                    },
+                    "url":"https://www.cardsnacks.com/"
+                },
+                {
+                    "title":{
                         "es":"Serprosurca",
                         "en":"Serprosurca",
                         "kg":"Serprosurca"
                     },
                     "from":1525651200,
-                    "to":null,
+                    "to":1568986697,
                     "description":{
                         "es":"Desarrollador Android en Kotlin para la aplicación que utiliza la emperesa para realizar sus tareas de investigación de mercado. Grabación de video, formularios dinámicos y subidas de archivos son algunas de las tareas que realiza la aplicación. También participo del desarrollo del backend en Node.JS sobre Moleculer",
-                        "en":"Kotlin Android developer for the company' app which is used to perform its market research tasks. Video recording, dynamic forms and file uploads are som of the app's features. I also take part on backend development using Node.JS on the Moleculer framework",
+                        "en":"Kotlin Android developer for the company's app which is used to perform its market research tasks. Video recording, dynamic forms and file uploads are some of the app's features. I also take part on backend development using Node.JS on the Moleculer framework",
                         "kg":""
                     },
                     "url":"https://spds.info"
@@ -1111,7 +1192,7 @@
                         "en":"Web and Android content management applications development in Java, PHP and MySQL. Android videogame development. Devops.",
                         "kg":null
                     },
-                    "url":"http://omilen.com/"
+                    "url":null
                 },
                 {
                     "title":{
@@ -1175,18 +1256,36 @@
                     },
                     "content":[
                         "Android",
-                        "Retrofit",
-                        "Otto",
-                        "ActiveAndroid",
-                        "Roboguice",
-                        "Node",
+                        "Kotlin",
+                        "Jetpack Navigation",
+                        "Jetpack ConstraintLayout",
+                        "Braintree",
+                        "ExoPlayer",
+                        "Glide",
+                        "Jetpack Lifecycle",
+                        "Retrofit2",
+                        "Jetpack WorkManager",
+			"Kotlin Coroutines",
+			"MVVM",
+                        "Lottie",
+                        "AWS",
+                        "FFMpeg",
+                        "PaperDB",
+			"Room",
+			"SOLID",
+                        "Flutter",
+                        "Rust & Cargo",
+                        "Node & NPM",
                         "Express",
                         "Mongoose",
                         "LibGDX",
                         "Angular",
+                        "React",
                         "Typescript",
-                        "Javascript",
-                        "PHP"
+                        "MySQL",
+                        "PostgreSQL",
+                        "PHP",
+                        "Shell scripting"
                     ]
                 },
                 {
@@ -1197,18 +1296,18 @@
                     },
                     "content":[
                         "Android Studio",
-                        "SublimeText",
-                        "Visual Studio Code",
+                        "VSCode",
                         "Jira",
-                        "Git",
+                        "GIT",
                         "GitHub",
-                        "Bitbucket",
                         "Google Android SDK",
                         "ADB",
-                        "NPM",
-                        "IntelliJIdea",
-                        "Eclipse",
-                        "Netbeans"
+                        "Firebase",
+                        "Lottie",
+                        "AWS",
+                        "Mixpanel",
+                        "Apache",
+                        "NGInx"
                     ]
                 }
             ]
@@ -1266,7 +1365,7 @@
             "kg":null
         },
         "avatar":"assets/avatar.png",
-        "linkedin":"https://www.linkedin.com/in/ignacio-guerendiain-0b589038",
+        "linkedin":"https://www.linkedin.com/in/iguerendiain/",
         "google":"iguerendiain@gmail.com",
         "UIcredits":{
             "title":{
