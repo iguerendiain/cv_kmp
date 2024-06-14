@@ -37,6 +37,23 @@
     padding-top:18px;
 }
 
+#langSelectorContainer img{
+    margin-top:-18px;
+}
+
+
+#downloadButton{
+    display: inline-block;
+    margin-right: 20px;
+    width:35px;
+    height:33px;
+    background-image: url("/assets/download.png");
+}
+
+#downloadButton:hover{
+    background-image: url("/assets/downloadHover.png");
+}
+
 @media(max-width:992px){
     .title{
         display:none;
