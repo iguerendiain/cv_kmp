@@ -1106,9 +1106,9 @@
                 },
                 {
                     "title":{
-                        "es":"Serprosurca",
-                        "en":"Serprosurca",
-                        "kg":"Serprosurca"
+                        "es":"CIOM",
+                        "en":"CIOM",
+                        "kg":"CIOM"
                     },
                     "from":1525651200,
                     "to":1568986697,
@@ -1117,7 +1117,7 @@
                         "en":"Kotlin Android developer for the company's app which is used to perform its market research tasks. Video recording, dynamic forms and file uploads are some of the app's features. I also take part on backend development using Node.JS on the Moleculer framework",
                         "kg":""
                     },
-                    "url":"https://spds.info"
+                    "url":"https://home.ciom.tech"
                 },
                 {
                     "title":{
@@ -1222,7 +1222,7 @@
                         "en":"SVN, Trac and MediaWiki implementation for the development area of the company. Administration and development of the RENATRE database and other smaller projects for other clients and the company itself. Worked with GNU/Linux, PostgreSQL and PHP mainly.",
                         "kg":null
                     },
-                    "url":"http://www.trainsolutions.com.ar/"
+                    "url":null
                 },
                 {
                     "title":{
