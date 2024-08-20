@@ -12,6 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerIcon
 import androidx.compose.ui.input.pointer.pointerHoverIcon
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
 
@@ -20,6 +21,7 @@ fun ClickableText(
     text: String,
     fontSize: TextUnit? = null,
     fontWeight: FontWeight? = null,
+    textAlign: TextAlign? = null,
     unhoveredColor: Color,
     hoveredColor: Color,
     modifier: Modifier? = null,
@@ -38,6 +40,7 @@ fun ClickableText(
         text = text,
         fontSize = fontSize?:14.sp,
         fontWeight = fontWeight,
+        textAlign = textAlign,
         color = if (isHovered.value) hoveredColor else unhoveredColor,
         modifier = hoverModifier.then(modifier?:Modifier)
     )
