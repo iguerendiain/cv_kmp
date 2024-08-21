@@ -212,18 +212,18 @@
                             "en":"Github",
                             "kg":"Github"
                         },
-                        "url":"https://github.com/iguerendiain/cv"
+                        "url":"https://github.com/iguerendiain/cv_angular"
                     }
                 ]
             },
             {
-                "id":"brewers",
+                "id":"cv",
                 "title":{
-                    "es":"Brewers",
-                    "en":"Brewers",
+                    "es":"Portfolio",
+                    "en":"Portfolio",
                     "kg":null
                 },
-                "icon":"assets/portfolio/brewers.png",
+                "icon":"assets/portfolio/cv.png",
                 "description":{
                     "es":null,
                     "en":null,
@@ -239,167 +239,56 @@
                     },
                     {
                         "title":{
-                            "es":"Node.JS",
-                            "en":"Node.JS",
-                            "kg":"Node.JS"
-                        }
-                    },                    
-                    {
-                        "title":{
-                            "es":"Restful",
-                            "en":"Restful",
-                            "kg":"Restful"
+                            "es":"Kotlin Multiplatform",
+                            "en":"Kotlin Multiplatform",
+                            "kg":"Kotlin Multiplatform"
                         }
                     },
                     {
                         "title":{
-                            "es":"Express",
-                            "en":"Express",
-                            "kg":"Express"
-                        }
-                    },                    
-                    {
-                        "title":{
-                            "es":"Backend",
-                            "en":"Backend",
-                            "kg":"Backend"
+                            "es":"Compose UI Multiplatform",
+                            "en":"Compose UI Multiplatform",
+                            "kg":"Compose UI Multiplatform"
                         }
                     },
                     {
                         "title":{
-                            "es":"Webapp",
-                            "en":"Webapp",
-                            "kg":"Webapp"
+                            "es":"WASM",
+                            "en":"WASM",
+                            "kg":"WASM"
                         }
                     },
                     {
                         "title":{
-                            "es":"Angular",
-                            "en":"Angular",
-                            "kg":"Angular"
+                            "es":"Soporte tema claro / obscuro",
+                            "en":"Dark / Light theme support",
+                            "kg":"Dark / Light theme support"
                         }
                     },
                     {
                         "title":{
-                            "es":"Bootstrap",
-                            "en":"Bootstrap",
-                            "kg":"Bootstrap"
+                            "es":"i18n",
+                            "en":"i18n",
+                            "kg":"i18n"
                         }
                     },
                     {
                         "title":{
-                            "es":"JSON",
-                            "en":"JSON",
-                            "kg":"JSON"
-                        }
-                    },
-                    {
-                        "title":{
-                            "es":"Google login",
-                            "en":"Google login",
-                            "kg":"Google login"
-                        }
-                    },
-                    {
-                        "title":{
-                            "es":"PostgreSQL",
-                            "en":"PostgreSQL",
-                            "kg":"PostgreSQL"
+                            "es":"Responsive",
+                            "en":"Responsive",
+                            "kg":"Responsive"
                         }
                     }
                 ],
-                "urls":[]
-            },
-            {
-                "id":"eisys",
-                "title":{
-                    "es":"Eisys Cloud CM",
-                    "en":"Eisys Cloud CM",
-                    "kg":null
-                },
-                "icon":"assets/portfolio/eisys.png",
-                "description":{
-                    "es":null,
-                    "en":null,
-                    "kg":null
-                },
-                "items":[
+                "urls":[
                     {
+                        "icon":"assets/github.png",
                         "title":{
-                            "es":"Proyecto personal",
-                            "en":"Personal project",
-                            "kg":""
-                        }
-                    },                
-                    {
-                        "title":{
-                            "es":"Node",
-                            "en":"Node",
-                            "kg":"Node"
-                        }
-                    },
-                    {
-                        "title":{
-                            "es":"Angular",
-                            "en":"Angular",
-                            "kg":"Angular"
-                        }
-                    },
-                    {
-                        "title":{
-                            "es":"Typescript",
-                            "en":"Typescript",
-                            "kg":"Typescript"
-                        }
-                    },                    
-                    {
-                        "title":{
-                            "es":"Administración de contenido",
-                            "en":"Content management",
-                            "kg":""
-                        }
-                    },                
-                    {
-                        "title":{
-                            "es":"Backend",
-                            "en":"Backend",
-                            "kg":"Backend"
-                        }
-                    },                
-                    {
-                        "title":{
-                            "es":"Webapp",
-                            "en":"Webapp",
-                            "kg":"Webapp"
-                        }
-                    },                
-                    {
-                        "title":{
-                            "es":"RESTful",
-                            "en":"RESTful",
-                            "kg":"RESTful"
-                        }
-                    },                
-                    {
-                        "title":{
-                            "es":"Express",
-                            "en":"Express",
-                            "kg":"Express"
-                        }
-                    },
-                    {
-                        "title":{
-                            "es":"PostgreSQL",
-                            "en":"PostgreSQL",
-                            "kg":"PostgreSQL"
-                        }
-                    },
-                    {
-                        "title":{
-                            "es":"Control de acceso avanzado",
-                            "en":"Advanced access control",
-                            "kg":""
-                        }
+                            "es":"Github",
+                            "en":"Github",
+                            "kg":"Github"
+                        },
+                        "url":"https://github.com/iguerendiain/cv"
                     }
                 ]
             },
