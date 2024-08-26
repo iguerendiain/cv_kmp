@@ -59,6 +59,13 @@
                     "en":"Contact",
                     "kg":null
                 }
+            },
+            "pdf":{
+                "title":{
+                    "es":"Descargar CV en PDF",
+                    "en":"PDF CV Download",
+                    "kg":null
+                }
             }
         }
     },
