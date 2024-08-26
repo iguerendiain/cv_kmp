@@ -66,6 +66,13 @@
                     "en":"PDF CV Download",
                     "kg":null
                 }
+            },
+            "language":{
+                "title":{
+                    "es":"Selector de idioma",
+                    "en":"Language selector",
+                    "kg":null
+                }
             }
         }
     },
